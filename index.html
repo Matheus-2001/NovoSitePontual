@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Pagina Inicial</title>
+    <style>
+        
+        *{
+            font-family: 'Raleway', sans-serif;
+        }
+        body{
+            margin: 0px;
+        }
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .part1{
+            background-color: #022C57;
+            height: 43px;
+            display: flex;
+            align-items: center;
+        }
+        .part2{
+            display: flex;
+            align-items: center;
+            background-color: #A7CEFC;
+            height: 100px;
+        }
+        .part3{
+            background-color: #022C57;
+            height: 8px;
+        }
+        .textup{
+            color: white;
+            justify-content: center;
+            margin: 0px 3px 0px 30px;
+            font-size: 15px;
+        }
+        .Embalagensvg{
+            width: 17px;
+            filter: invert(100%);
+        }
+        .Embalagensvgi{
+            width: 17px;
+        }
+        .iconpontual{
+            object-fit: cover;
+            height: 180px;
+            margin: 0px 0px 0px ;
+        }
+        .barraPesquisa{
+            width: 550px;
+            height: 45px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .barraPesquisaText{
+            width: 468px;
+            font-size: 14px;
+            margin: 0px 20px 0px;
+            font-weight: bolder;
+            color: #aaaaaa;
+            font-style: italic;
+        }
+        .botaopesquisa{
+            background-color: #022C57;
+            width: 38px;
+            height: 38px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .lupasvg{
+            width: 20px;
+            filter: invert(100%);
+        }
+        .retireObj{
+            display: flex;
+            margin-left: 25px;
+            
+        }
+        .retireText{
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        .retireImg{
+            width: 21px;
+            margin-right: 5px;
+        }
+        .recebaObj{
+            display: flex;
+            margin-left: 25px;
+            
+        }
+        .recebaText{
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        .recebaImg{
+            width: 40px;
+            margin-right: 5px;
+        }
+        .orcamentoObj{
+            display: flex;
+            margin-left: 25px;
+            
+        }
+        .orcamentoText{
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        .orcamentoImg{
+            width: 40px;
+            margin-right: 5px;
+        }
+        .slider {
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        }
+        .slick-next{
+        color: rgb(255, 0, 0)!important;
+        right: 0px;
+        }
+        .slick-prev{
+            left: 0px;
+        }
+        .slick-dots{
+            bottom: 5px;
+            filter: invert(1);
+        }
+        .lojasObj{
+            display: flex;
+            width: 100%;
+            height: 600px;
+            margin-top: -30px;
+            background-color: #EBEBEB;
+            justify-content: space-evenly;
+            align-items: center;
+            object-fit: cover;
+        }
+        .lojaRetan{
+            display: flex;
+            background-color: white;
+            width: 24%;
+            height: 92%;
+            border-radius: 20px;
+            transition: box-shadow 0.4s;
+            margin: 0px -70px 0px;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .lojaRetan:hover{
+            box-shadow: 0px 0px 15px rgb(161, 161, 161);
+        }
+        .imgLoja{
+            width: 95%;
+            
+        }
+        .lojaText{
+            color: #022C57;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .material-symbols-sharp{
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48
+        }
+        .material-symbols-sharp {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48
+        }
+        .lojaInfo{
+            display: flex;
+            align-items: center;
+
+        }
+        .divinfo{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin-left: 5px;
+        }
+
+
+    </style>
+    
+    
+   
+</head>
+<body>
+    <div class="menu">
+        <div class="part1">
+            <p class="textup">Nossas Embalagens</p> <img class="Embalagensvg"src="https://embalagenspontual.com/wp-content/uploads/2022/07/reciclar1.svg" alt="">
+            <p class="textup">Doces e Confeitarias</p> <img class="Embalagensvg"src="https://embalagenspontual.com/wp-content/uploads/2022/07/confeitaria.svg" alt="">
+            <p class="textup">Higiene e Limpeza</p> <img class="Embalagensvgi"src="https://embalagenspontual.com/wp-content/uploads/2022/07/higiene-e-limpeza2.svg" alt="">
+            <p class="textup">Atendimento</p> <img class="Embalagensvg"src="https://embalagenspontual.com/wp-content/uploads/2022/07/headset1.svg" alt="">
+            <p class="textup">Escolha seu negócio</p> <img class="Embalagensvg"src="https://embalagenspontual.com/wp-content/uploads/2022/07/chooose2.svg" alt="">
+            <p class="textup">Catálogo</p> <img class="Embalagensvgi"src="https://embalagenspontual.com/wp-content/uploads/2022/07/catalog4.svg" alt="">
+        </div>
+        <div class="part2">
+            <img class="iconpontual"src="https://embalagenspontual.com/wp-content/uploads/2021/08/LOGO-PONTUAL.png" alt="logo pontual">
+            <div class="barraPesquisa"><p class="barraPesquisaText">Encontre nossos produtos...</p> <div class="botaopesquisa"> <img class="lupasvg" src="https://embalagenspontual.com/wp-content/uploads/2023/01/search-2907.svg" alt=""></div></div>
+            <div class="retireObj">
+                <img class="retireImg"src="https://embalagenspontual.com/wp-content/uploads/2023/01/Marker.svg" alt="MarkerGPS">
+                <p class="retireText">RETIRE<br>em nossas lojas</p>
+            </div>
+            <div class="recebaObj">
+                <img class="recebaImg"src="https://embalagenspontual.com/wp-content/uploads/2023/01/caminhao-icon.svg" alt="Caminhãozihno">
+                <p class="recebaText">RECEBA<br>em mãos</p>
+            </div>
+            <div class="orcamentoObj">
+                <img class="orcamentoImg"src="https://embalagenspontual.com/wp-content/uploads/2023/01/book2.svg" alt="Livro">
+                <p class="orcamentoText">ORÇAMENTO<br>de produtos</p>
+            </div>
+        </div>
+        <div class="part3"></div>
+        <div class="slider">
+            <img src="https://embalagenspontual.com/wp-content/uploads/2023/01/EP-Capa-para-Site-2.png">
+            <img src="https://embalagenspontual.com/wp-content/uploads/2023/01/8.png">
+            <img src="https://embalagenspontual.com/wp-content/uploads/2023/01/5.png">
+            <img src="https://embalagenspontual.com/wp-content/uploads/2023/01/4.png">
+        </div>
+          
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true});
+    </script>
+    <div class="lojasObj">
+        <div class="lojaRetan">
+            <p class="lojaText">Vicente Pires</p>
+            <img class="imgLoja"src="https://embalagenspontual.com/wp-content/webp-express/webp-images/uploads/2021/08/loja2-1024x557.jpg.webp" alt="">
+        </div>
+        <div class="lojaRetan">
+            <p class="lojaText">Ceilândia</p>
+            <img class="imgLoja"src="https://embalagenspontual.com/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Loja-Ceilandia-plhz0iok5u4h18wtt2t2g3w4snub5icpxs17wvpqam.png.webp" alt="">
+            <div class="divinfo">
+                <div class="lojaInfo">
+                    <span class="material-symbols-sharp">location_on</span>
+                    <p>QNM 03 Conjunto P Lote 12</p>
+                </div>
+                <div class="lojaInfo">
+                    <span class="material-symbols-sharp">map</span>
+                    <p>Ceilândia Sul - DF</p>
+                </div>
+                <div class="lojaInfo">
+                    <span class="material-symbols-sharp">map</span>
+                    <p>Ceilândia Sul - DF</p>
+                </div>
+                <div class="lojaInfo">
+                    <span class="material-symbols-sharp">map</span>
+                    <p>Ceilândia Sul - DF</p>
+                </div>
+            </div>
+        </div>
+        <div class="lojaRetan">
+            <p class="lojaText">Recanto das Emas</p>
+            <img class="imgLoja"src="https://embalagenspontual.com/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Loja-final-pjosnnjoy0m6k6nfng2kk15eru4icrtc7pqbywjja6.png.webp" alt="">
+            
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
